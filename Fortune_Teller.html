@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+
+	<meta charset= "UTF-8">
+	<meta http- equiv= "X-UA-Compatible" content="IE=edge">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+  	<title>Fourtune Teller</title>
+	<meta name="description" content="Fortune Teller">
+	<meta name="keywords" content="Random, Fortune">
+	<meta name="author" content="Arden">
+	
+  	 <style>
+		img {
+    	
+
+    	z-index: -1;
+		}
+
+	</style>
+	</head>
+
+	<body bgcolor="a2d9ce">
+		<center>		
+		<h2> Welcome to "Four"-Tune Teller! </h2>
+		<h4> I'm Madam Arden, here to show you how things work. Try to skip ahead and I'll curse you with years of sleep deprivation! 
+			When you're ready, roll the dice to determine your future. You have <b>up to five rolls</b> to find a result you're happy with. But tread cautiously, you can never return to a result. The fifth result is what you'll be stuck with for all of eternity! 
+
+		<!-- 	You're in luck as you've caught me on a good day.  I'll grant you some agency in creating your destiny. Should a <b>4</b> roll on any dice, you may <b>lock in</b> one of the 6 fate categories so that it stays for future rolls. -->
+
+			Click "Roll" and we'll get this party started.
+
+		 </h4>
+
+
+		 <form>
+			<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #F8c471; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="Roll" onclick = "rollDice1()" >
+		</form>
+		
+		
+		 <div class="container">
+		 	<img src= "crystal_ball.png" alt= ball width= "720" height="600" position= center>
+		 	<div class="results" z-index=1>
+		 		<p> <br></p>	
+		 		<p> <br></p>
+		 		<p> <br></p>
+		 		<p id = "house1"> </p>	
+		 		<p id = "location1"></p>
+		 		<p id= "kids1"></p>
+		 		<p id= "pets1"></p>
+		 		<p id= "job1"></p>
+		 		<p id= "hobby1"></p> 
+		 	</div>
+		 </div>
+		  
+		 <form>
+			<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #d580ff; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="KEEP!" onclick = "keepFate()" >
+		</form>
+
+
+		<form>
+			<input style="width: 300px; padding: 20px; cursor: pointer; box-shadow: 6px 6px 5px; #999; -webkit-box-shadow: 6px 6px 5px #999; -moz-box-shadow: 6px 6px 5px #999; font-weight: bold; background: #ff8080; color: #000; border-radius: 10px; border: 1px solid #999; font-size: 150%;" type="button" value="TRY AGAIN!" onclick = "rollDice1()" >
+		</form>
+		
+
+		 </center>
+		<script src= "Fortune_Teller.js"> </script>
+	</body>
